@@ -4,17 +4,18 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Resume from './components/Resume';
 import Contact from './components/Contact';
+import InteractiveBackground from './components/InteractiveBackground';
 
 function App() {
   return (
-    <div className="font-sans">
+    <InteractiveBackground>
       <Navbar />
       <Hero />
       <Portfolio />
       <About />
       <Resume />
       <Contact />
-    </div>
+    </InteractiveBackground>
   );
 }
 export default App;

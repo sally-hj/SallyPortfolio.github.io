@@ -6,13 +6,36 @@
   --color-card: #161616;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--color-dark);
   color: white;
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Outfit', 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.2);
+  border-radius: 9999px;
+  border: 2px solid var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.5);
+}
+
+/* Selection Highlight */
+::selection {
+  background: rgba(168, 85, 247, 0.3);
+  color: white;
 }
